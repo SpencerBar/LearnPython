@@ -21,7 +21,4 @@ def GetAnswer(AnswerNumber):
         return 'Very Doubtful'
     elif AnswerNumber == 10:
         return 'No'
-
-r = random.randint(1,10)
-fortune = GetAnswer(r)
-print(fortune)
+print(getAnswer(random.randint(1, 9)))
