@@ -1,4 +1,3 @@
-import pprint
 inventory = {'Rope': 1, 'Torch': 6, 'Gold': 42, 'Dagger': 1, 'Bow': 1, 'Arrow(s)': 12}
 dragonLoot = ['Gold', 'Dagger', 'Gold', 'Gold', 'Ruby']
 
@@ -7,10 +6,18 @@ def displayLoot(loot):
     print('Loot:')
     for i in range(len(loot)):
         print(str(loot[i]))
+    
+def takeLoot(inventory, loot):
     print('Loot all?(y/n)')
-    toloot = str(input())
-    if toloot == 'y' or 'Y':
-        addToInventory(inventory, loot)
+    while True:
+        toloot = str(input())
+        if toloot == 'y' or toloot =='Y':
+            addToInventory(inventory, loot)
+            break
+        elif toloot == 'n' or toloot == 'N':
+            break
+        else:
+            print('Sorry did you want to loot?(y/n)')
 
 def displayInventory(inventory):
     print('Inventory:')
@@ -27,4 +34,5 @@ def addToInventory(inventory, addedItems):
 displayInventory(inventory)
 print("You've slain a monster!")
 displayLoot(dragonLoot)
+takeLoot(inventory, dragonLoot)
 displayInventory(inventory)
