@@ -5,3 +5,4 @@ Ch.2 - Flow control
 Ch.3 - Funtions
 Ch.4 - Lists
 Ch.5 - Dictionaries
+Ch.6 - String Manipulation
