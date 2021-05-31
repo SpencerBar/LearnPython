@@ -10,7 +10,7 @@ lines = text.split('\n')#seperate lines
 
 for i in range(len(lines)): #loop through all indexes in lines 
     lines[i] = '*' + lines[i]  #add stars
-
+text = '\n'.join(lines) # join the lines for export
 pyperclip.copy(text)
 
 
