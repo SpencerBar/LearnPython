@@ -6,3 +6,4 @@ Ch.3 - Funtions
 Ch.4 - Lists
 Ch.5 - Dictionaries
 Ch.6 - String Manipulation
+Ch.7 - Regular Expressions
